@@ -1,0 +1,18 @@
+name: pka-cli
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - rdkit
+  - pandas
+  - numpy<2
+  - scipy
+  - scikit-learn
+  - pytest
+  - pip
+  - pip:
+      - torch==2.2.2
+      - torch-geometric==2.3.1
+      - --extra-index-url https://data.pyg.org/whl/torch-2.2.0+cpu.html
+      - torch-scatter==2.1.2
+      - torch-sparse==0.6.18

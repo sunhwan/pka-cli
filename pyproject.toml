@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pka-cli"
+version = "0.1.0"
+description = "Standalone MolGpKa pKa prediction and protomer enumeration CLI"
+requires-python = ">=3.10"
+
+[project.scripts]
+pka-cli = "pka_cli.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["pka_cli*"]
